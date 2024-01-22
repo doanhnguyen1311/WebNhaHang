@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bống BBQ - Trang chủ</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="fileCSS/dangnhap.css">
+    <style>
+        /* Ẩn nút tăng/giảm trong trường nhập số */
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="content">
+        <h2>Bống BBQ</h2>
+        <p>Bống BBQ là nơi thích hợp cho những <br>tâm hồn đam mê với đồ nướng</p>
+        <p>Đến ngay với chúng tôi</p>
+    </div>
+    <div id="anhden">
+        <img src="filePicture/hinhnenden.jpg" alt="">
+    </div>
+    <div id="anh">
+        <img src="filePicture/bong3.jpg" alt="" width="1280px" height="854px">
+    </div>
+    <nav>
+        <div id="nav-tong">
+            <div id="logo">
+                <a href="" class="logo"></a>Bống BBQ</a>
+            </div>
+            <div id="nav-left">
+                <li id="Home"><a href="bongbbq.html">TRANG CHỦ</a></li>
+                <li id="Restaurant"><a href="">NHÀ HÀNG</a></li>
+                <li id="Order"><a href="">ĐẶT MÓN</a>
+                    <ul id="Order-menu">
+                        <li id=""><a href=""></a></li>
+                        <li id=""><a href=""></a></li>
+                        <li id=""><a href=""></a></li>
+                    </ul>
+                </li>
+                <li id="contact"><a href="">LIÊN HỆ</a></li>
+            </div>
+            <div id="nav-right">
+                <input type="text" id="search" placeholder="Tìm kiếm">
+                <img id="img-search" src="filePicture/NicePng_search-icon-png_116167.png" alt="" height="20px" width="20px"
+                    usemap="#search">
+                <map name="search">
+                    <area shape="rect" coords="0, 0, 22, 22" href="" alt="" id="timKiem" onclick="timKiem()">
+                </map>
+                <li id="sign-up"><a href="dangky.html">ĐĂNG KÝ</a>
+                </li>
+                <li id="sign-in"><a href="dangnhapbong.html">ĐĂNG NHẬP</a></li>
+            </div>
+        </div>
+    </nav>
+    <script src="fileJavascript/dangnhap.js" type="text/javascript"></script>
+            <div id="tab">
+                <div id="tab-top">
+                    <p><b>Đăng Nhập</b></p>
+                </div>
+                <div id="tab-center">
+                    <input type="text" name="txtun" placeholder="Nhập Username" id="un">
+                    <input type="password" name="txtpass" placeholder="Nhập password" id="pass">
+                </div>
+                <div id="tab-bot">
+                    <input id ="inp" type='submit' name='th' value='Đăng nhập' onclick="checkAdmin()">
+                </div>
+                <p style="padding-bottom: 20px;" class="bottom-dky">Chưa có tài khoản?<a href="dangky.html" style="color: white;">Đăng ký</a></p>
+            </div>
+    </div>
+</body>
+
+</html>

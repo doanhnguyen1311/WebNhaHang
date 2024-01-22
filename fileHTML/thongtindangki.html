@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="dangki.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên</title>
+    <style>
+        /* Ẩn nút tăng/giảm trong trường nhập số */
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <form id = "tab" action = "dangki.jsp" method="post">
+        <div id = "tab-top">
+            <p><b>Đăng Nhập</b></p>
+        </div>
+        <div id="tab-center">
+            <input type="text" name="un" placeholder="Nhập Username" id="un">
+            <input type="password" name="pass" placeholder="Nhập password" id="pass">
+        </div>
+        <div id="tab-bot">
+            <input type='submit' name='th' value='Đăng nhập'>
+        </div>
+    </form>
+    <div id="anh">
+        <img src="bong3.jpg" alt="">
+    </div>
+<nav>
+    <div id="nav-tong">
+        <div id="logo">
+            <li><a href="">Bống BBQ</a></li>
+        </div>
+        <div id="nav-left">
+            <li id="Home"><a href="">TRANG CHỦ</a></li>
+            <li id="Restaurant"><a href="">NHÀ HÀNG</a></li>
+            <li id="Order"><a href="">ĐẶT MÓN</a>
+                <ul id="Order-menu">
+                    <li id=""><a href=""></a></li>
+                    <li id=""><a href=""></a></li>
+                    <li id=""><a href=""></a></li>
+
+                </ul>
+            </li>
+            <li id="contact"><a href="">LIÊN HỆ</a></li>
+        </div>
+        <div id="nav-right">
+            <input type="text" id="search" placeholder="Tìm kiếm">
+            <img id="img-search" src="NicePng_search-icon-png_116167.png" alt="" height="20px" width="20px"
+                usemap="#search">
+            <map name="search">
+                <area shape="rect" coords="0, 0, 22, 22" href="" alt="" id="timKiem" onclick="timKiem()">
+            </map>
+            <li id="sign-up"><a href="http://127.0.0.1:5500/Users/doanh/Downloads/dangky.html">ĐĂNG KÝ</a></li>
+            <li id="sign-in"><a href="http://127.0.0.1:5500/Users/doanh/Downloads/thongtindangki.html">ĐĂNG NHẬP</a></li>
+        </div>
+    </div>
+</nav>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đánh Giá</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fileCSS/menu.css">
+    <style>
+        nav{
+            position: relative;
+        }
+        #Dichvus a:visited{
+            color: black;
+        }
+        #Dichvus a:hover{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <div id="nav-tong">
+        <div id="logo">
+            <li class="logo"></li><a>Bống BBQ</a>
+        </div>
+        <div id="nav-left">
+            <li id="Home"><a href="">TRANG CHỦ</a></li>
+            <li id="Restaurant"><a href="">NHÀ HÀNG</a></li>
+            <li id="Order"><a href="">ĐẶT MÓN</a></li>
+            <li id="Dichvu"><a href="">DỊCH VỤ TIỆC</a>
+                <ul id="Dichvus">
+                    <li id="s1"><a href="#t1">Đặt tiệc sinh nhật</a></li>
+                    <li id="s2"><a href="#t1">Đặt bàn hẹn hò</a></li>
+                    <li id="s3"><a href="#t1">Đặt tiệc gia đình</a></li>
+                </ul>
+            </li>
+            <li id="contact"><a href="">LIÊN HỆ</a>
+                <ul id="con">
+                    <li id="c1"><a href="">Bống BBQ Garden:0123456789</a></li>
+                    <li id="c2"><a href="">Bống BBQ LakeView:0123456789</a></li>
+                </ul>
+            </li>
+        </div>
+        <div id="nav-right">
+            <input type="text" id="search" placeholder="Tìm kiếm">
+            <img id="img-search" src="filePicture/NicePng_search-icon-png_116167.png" alt="" height="20px" width="20px"
+                usemap="#search">
+            <map name="search">
+                <area shape="rect" coords="0, 0, 22, 22" href="" alt="" id="timKiem" onclick="timKiem()">
+            </map>
+        </div>
+    </div>
+</nav>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h6 class="display-4">Trang Đánh Giá</h6>
+            <p class="lead">Hãy để lại ý kiến của bạn về chất lượng phục vụ và món ăn của chúng tôi!</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="comment">Bình luận của bạn:</label>
+                    <textarea class="form-control" id="comment" rows="3" placeholder="Nhập bình luận"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Gửi Đánh Giá</button>
+            </form>
+            <br>
+            <a href="bongbbq1.html" class="btn btn-outline-primary">Quay về trang chủ</a>
+            <hr>
+
+            <h6 class="mt-4">Các Bình Luận Khác:</h6>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong class="mr-2">Nguyễn Văn Doanh:</strong>
+                    Chất lượng dịch vụ quá đỉnh
+                </li>
+                <!-- Các mục bình luận sẽ được thêm vào đây -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS và Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

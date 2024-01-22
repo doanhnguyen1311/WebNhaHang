@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fileCSS/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập - Bống BBQ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="fileJavascript/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // phần này là của đăng nhập đăng ký
+            // phần này là của thanh nav-left thay đổi li
+            $("#Home").mouseenter(function () {
+                $("#Home a").css("color", "black");
+                $("#Home").css("background-color", "white");
+            });
+            $("#Home").mouseleave(function () {
+                $("#Home a").css("color", "");
+                $("#Home").css("background-color", "");
+            });
+            $("#Restaurant").mouseenter(function () {
+                $("#Restaurant a").css("color", "black");
+                $("#Restaurant").css("background-color", "white");
+            });
+            $("#Restaurant").mouseleave(function () {
+                $("#Restaurant a").css("color", "");
+                $("#Restaurant").css("background-color", "");
+            });
+            $("#Order").mouseenter(function () {
+                $("#Order a").css("color", "black");
+                $("#Order").css("background-color", "white");
+            });
+            $("#Order").mouseleave(function () {
+                $("#Order a").css("color", "");
+                $("#Order").css("background-color", "");
+            });
+            $("#Dichvu").mouseenter(function () {
+                $("#Dichvu a").css("color", "black");
+                $("#Dichvu").css("background-color", "white");
+            });
+            $("#Dichvu").mouseleave(function () {
+                $("#Dichvu a").css("color", "");
+                $("#Dichvu").css("background-color", "");
+            });
+            $("#contact").mouseenter(function () {
+                $("#contact a").css("color", "black");
+                $("#contact").css("background-color", "white");
+            });
+            $("#contact").mouseleave(function () {
+                $("#contact a").css("color", "");
+                $("#contact").css("background-color", "");
+            });
+            // phần này của Dichvus{
+            $("#s1").mouseenter(function () {
+                $("#s1 a").css("color", "white");
+            });
+            $("#s1").mouseleave(function () {
+                $("#s1 a").css("color", "");
+            });
+            $("#s2").mouseenter(function () {
+                $("#s2 a").css("color", "white");
+            });
+            $("#s2").mouseleave(function () {
+                $("#s2 a").css("color", "");
+            });
+            $("#s3").mouseenter(function () {
+                $("#s3 a").css("color", "white");
+            });
+            $("#s3").mouseleave(function () {
+                $("#s3 a").css("color", "");
+            });
+            // }
+            // Phần này là của Contact{
+            $("#c1").mouseenter(function () {
+                $("#c1 a").css("color", "white");
+            });
+            $("#c1").mouseleave(function () {
+                $("#c1 a").css("color", "");
+            });
+            $("#c2").mouseenter(function () {
+                $("#c2 a").css("color", "white");
+            });
+            $("#c2").mouseleave(function () {
+                $("#c2 a").css("color", "");
+            });
+            // }
+            // này là phần 3 ô tròn xanh
+            $("#t1").mouseenter(function () {
+                $("#t1 img").css("width", "70px");
+            });
+            $("#t1").mouseleave(function () {
+                $("#t1 img").css("width", "");
+            });
+            $("#t2").mouseenter(function () {
+                $("#t2 img").css("width", "70px");
+            });
+            $("#t2").mouseleave(function () {
+                $("#t2 img").css("width", "");
+            });
+            $("#t3").mouseenter(function () {
+                $("#t3 img").css("width", "70px");
+            });
+            $("#t3").mouseleave(function () {
+                $("#t3 img").css("width", "");
+            });
+        });
+    </script>
+</head>
+<style>
+    a{
+        text-decoration: none;
+    }
+    form{
+        background-color: rgb(247, 255, 229);
+        padding: 30px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 350px;
+        position: absolute;
+        z-index: 5;
+        top: 300px;
+        left: 450px;
+    }
+</style>
+<body>
+    <nav>
+        <div id="nav-tong">
+            <div id="logo">
+                <li class="logo"></li><a>Bống BBQ</a>
+            </div>
+            <div id="nav-left">
+                <li id="Home"><a href="">TRANG CHỦ</a></li>
+                <li id="Restaurant"><a href="">NHÀ HÀNG</a></li>
+                <li id="Order"><a href="">ĐẶT MÓN</a></li>
+                <li id="Dichvu"><a href="">DỊCH VỤ TIỆC</a>
+                    <ul id="Dichvus">
+                        <li id="s1"><a href="">Đặt tiệc sinh nhật</a></li>
+                        <li id="s2"><a href="">Đặt bàn hẹn hò</a></li>
+                        <li id="s3"><a href="">Đặt tiệc gia đình</a></li>
+                    </ul>
+                </li>
+                <li id="contact"><a href="">LIÊN HỆ</a>
+                    <ul id="con">
+                        <li id="c1"><a href="">Bống BBQ Garden:0123456789</a></li>
+                        <li id="c2"><a href="">Bống BBQ LakeView:0123456789</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div id="nav-right">
+                <input type="text" id="search" placeholder="Tìm kiếm">
+                <img id="img-search" src="filePicture/NicePng_search-icon-png_116167.png" alt="" height="20px" width="20px"
+                    usemap="#search">
+                <map name="search">
+                    <area shape="rect" coords="0, 0, 22, 22" href="" alt="" id="timKiem" onclick="timKiem()">
+                </map>
+            </div>
+        </div>
+    </nav>
+    <div id="nenduoi">
+        <div id="tron">
+            <div id="t1" align="center">
+                <a href="">
+                    <img src="filePicture/datban.webp" alt="">
+                </a>
+            </div>
+            <div id="t2" align="center">
+                <a href=""><img src="filePicture/datship.webp" alt=""></a>
+            </div>
+            <div id="t3" align="center">
+                <a href=""><img src="filePicture/dattiec.webp" alt=""></a> <br>
+            </div>
+        </div>
+        <div id="bot-tron">
+            <p class="t1">Reserve a table</p>
+            <p class="t2">Place an delivery</p>
+            <p class="t3">Place an family table</p>
+        </div>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label" style="text-transform: capitalize;">Username</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div id="emailHelp" class="form-text">If you not have a account <a href="">Sign Up?</a></div>
+        <button  type="submit" class="btn btn-primary">Login</button>
+    </form>
+    
+</body>
+</html>

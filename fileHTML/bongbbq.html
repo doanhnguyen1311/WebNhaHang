@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bống BBQ - Trang chủ</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="fileCSS\trangchu.css">
+    <script src="fileJavascript/jquery.min.js"></script>
+</head>
+<script src="fileJavascript/trangchu.js"></script>
+
+<body id="body">
+<div id="content">
+    <h2>Bống BBQ</h2>
+    <p>Bống BBQ là nơi thích hợp cho những <br>tâm hồn đam mê với đồ nướng</p>
+    <p>Đến ngay với chúng tôi</p>
+</div>
+<div id="anhden">
+    <img src="filePicture/hinhnenden.jpg" alt="">
+</div>
+<div id="anh">
+    <img src="filePicture/bong3.jpg" alt="" width="1280px">
+</div>
+    <nav>
+        <div id="nav-tong">
+            <div id="logo">
+                <a href="" class="logo"></a>Bống BBQ</a>
+            </div>
+            <div id="nav-left">
+                <li id="Home"><a href="bongbbq.html">TRANG CHỦ</a></li>
+                <li id="Restaurant"><a href="">NHÀ HÀNG</a></li>
+                <li id="Order"><a href="">ĐẶT MÓN</a>
+                    <ul id="Order-menu">
+                        <li id=""><a href=""></a></li>
+                        <li id=""><a href=""></a></li>
+                        <li id=""><a href=""></a></li>
+                    </ul>
+                </li>
+                <li id="contact"><a href="">LIÊN HỆ</a></li>
+            </div>
+            <div id="nav-right">
+                <input type="text" id="search" placeholder="Tìm kiếm">
+                <img id="img-search" src="filePicture/NicePng_search-icon-png_116167.png" alt="" height="20px" width="20px"
+                    usemap="#search">
+                <map name="search">
+                    <area shape="rect" coords="0, 0, 22, 22" href="" alt="" id="timKiem" onclick="timKiem()">
+                </map>
+                <li id="adminButton"><a href="" onload="checkAdmin()">ADMIN</a></li>
+                <li id="sign-up"><a href="dangky.html">ĐĂNG KÝ</a>
+                </li>
+                <li id="sign-in"><a href="dangnhapbong.html">ĐĂNG NHẬP</a></li>
+            </div>
+        </div>
+    </nav>
+    <button id="tab-tim">
+        Tìm hiểu thêm..
+    </button>
+    </div>
+    <div id="message">
+        <div class = "message">
+        <img class="img-mess" src="filePicture/message.png" alt="" height="40px" width="40px">
+        <h3>Tin Nhắn</h3>
+        <img src="filePicture/out.png" alt="" id="exit-mess">
+        </div>
+        <div id="message-l">
+
+        </div>
+        <div class = "message-m">
+        <input type="text" id="input-mess"> <span style="border-bottom: 1px solid gray; margin-top: 5px; opacity: 0.4;">|</span>
+        <a style="cursor: pointer;"><p id="p-mess">Gửi</p></a>
+        </div>
+    </div>
+    <p id="text-bong-big">BỐNG BBQ</p>
+    <div id="gioiThieu">
+        <div id="flex-gioiThieu">
+        <h2>Giới Thiệu</h2>
+        <img src="filePicture/out.png" alt="" id="exit-gt">
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("#tab-tim").mousedown(function(){
+                    $("#gioiThieu").fadeOut(1000).slideDown(2000);
+                });
+            });
+        </script>
+        <p>
+            **Bống BBQ - Nơi Hòa Quyện Hương Vị Lẩu Nướng**<br>
+            **Thành lập:** 15/7/2022<br>
+            **Địa điểm:** Thừa Thiên Huế<br>
+            **Giới Thiệu Chung**<br>
+            Nếu bạn là một tín đồ của ẩm thực và đang tìm kiếm một trải nghiệm ẩm thực độc đáo tại Thừa Thiên Huế, thì "Bống BBQ" là <br>
+            điểm đến không thể bỏ lỡ. Với sự kết hợp tinh tế giữa lẩu và nướng, chúng tôi tự hào mang đến cho bạn một không gian ẩm <br>
+            thực độc đáo và lôi cuốn.<br>
+            **Chuyên Mục Lẩu Nướng**<br>
+            Tại "Bống BBQ," chúng tôi chuyên về ẩm thực lẩu nướng, nơi bạn có cơ hội tự do sáng tạo và thỏa sức kết hợp các nguyên <br>
+            liệu theo sở thích cá nhân. Với một loạt các loại thực phẩm tươi ngon như thịt bò, thịt gà, hải sản và rau sống, bạn sẽ <br>
+            được thỏa mãn bởi sự đa dạng và ngon miệng của món ăn.<br>
+            **Vị Trí Thuận Lợi**<br>
+            "**Bống BBQ**" có hai cơ sở tại Thành phố Huế:<br>
+            **Cơ sở 1 - Bống BBQ Garden:** <br>
+            - Địa chỉ: 2 kiệt 15 đường Tố Hữu, Thành phố Huế<br>
+            **Cơ sở 2 - Bống BBQ LakeView:** <br>
+            - Địa chỉ: số 68 Đoàn Thị Điểm, phường Thuận Thành, Thành Phố Huế.<br>
+            **Môi Trường Thân Thiện**<br>
+            Chúng tôi tạo ra một môi trường ấm cúng và thân thiện tại "Bống BBQ." Với không gian trang nhã và phục vụ chuyên nghiệp, <br>
+            bạn và gia đình, bạn bè có thể cùng nhau tận hưởng những bữa tiệc ngon miệng và vui vẻ.<br>
+            **Hãy Đến Và Trải Nghiệm**<br>
+            Chúng tôi chào đón bạn đến "Bống BBQ" để thực hiện hành trình ẩm thực độc đáo và thú vị. Với các món ăn ngon và không <br>
+            gian ấm áp, chúng tôi tin rằng bạn sẽ có những trải nghiệm đáng nhớ tại quán của chúng tôi. <br>
+        </p>
+    </div>
+</body>
+</html>

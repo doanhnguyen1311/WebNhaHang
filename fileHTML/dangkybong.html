@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="fileCSS/dangky.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="anh">
+        <img onclick="clickout()" src="filePicture/bong3.jpg" alt="" height="750px" width="1300px">
+    </div>
+    <nav>
+        <div id="nav-tong">
+            <div id="logo">
+                Bống BBQ
+            </div>
+            <div id="nav-left">
+                <li id="Home"><a href="dangky.html">TRANG CHỦ</a></li>
+                <li id="Restaurant"><a href="dangky.html">NHÀ HÀNG</a></li>
+                <li id="Order"><a href="dangky.html">ĐẶT MÓN</a>
+                    <ul id="Order-menu">
+                        <li id=""><a href=""></a></li>
+                        <li id=""><a href=""></a></li>
+                        <li id=""><a href=""></a></li>
+                    </ul>
+                </li>
+                <li id="contact"><a href="">LIÊN HỆ</a></li>
+            </div>
+            <div id="nav-right">
+                <input type="text" id="search" placeholder="Tìm kiếm">
+                <img id="img-search" src="filePicture/kisspng-magnifying-glass-computer-icons-magnifier-symbol-5b0cb599cbca21.4256112815275595778347.png" alt="" height="20px" width="20px"
+                    usemap="#search">
+                <map name="search">
+                    <area shape="rect" coords="0, 0, 22, 22" href="" alt="" id="timKiem" onclick="timKiem()">
+                </map>
+                <li id="sign-up"><a style="cursor: pointer;" onclick="log()">ĐĂNG KÝ</a></li>
+                <li id="sign-in"><a href="dangnhapbong.html">ĐĂNG NHẬP</a></li>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function lamdam() {
+                let a = document.getElementById('anh');
+                a.style.backgroundColor = 'gray';
+                a.style.opacity = '0.3';
+            }
+        function lammo(){
+            let a = document.getElementById('anh');
+            let b = document.getElementById('timKiem');
+            a.style.backgroundColor = 'gray';
+            a.style.opacity = '0.1';
+            a.style.opacity = '0.1';
+        }
+        function log(){
+            let a = document.getElementById('tab');
+            a.style.visibility = 'visible';
+            lammo();
+        }
+        function clickout(){
+            let a = document.getElementById('tab');
+            a.style.visibility = 'hidden';
+            lamdam();
+        }
+    </script>
+    <div id = "tab">
+        <div id="top">
+           <p>ĐĂNG KÝ</p>
+        </div>
+        <div id="center">
+            <input type="text" name="username" placeholder="Nhập Tên Đăng Nhập" id="a">
+            <div id="center-sl">
+                <select name="" id="day">
+                    <option>Ngày sinh</option>
+                </select>
+                <select name="" id="">
+                    <option value="">Tháng sinh</option>
+                    <option value=""></option>
+                </select>
+                <select>
+                    <option value="">Năm sinh</option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <input type="email" name="email" id="b" placeholder="Nhập email">
+            <input type="password" name="" id="c" placeholder="Nhập mật khẩu">
+            <input style="font-weight:bold ;" type="submit" name="" id="" value="ĐĂNG KÝ">    
+        </div>
+        <div id="bottom">
+            <p style="text-align: center;">Nếu đã có tài khoản? <a href="dangnhapbong.html">Đăng nhập<div id="ca">.</div></a></p>
+        </div>
+    </div>
+</body>
+</html>
